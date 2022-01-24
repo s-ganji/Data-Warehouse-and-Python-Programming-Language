@@ -11,5 +11,15 @@ Draw the following diagrams:
 - Circular diagram of medal distribution on different continents
 - Bar chart of the top 10 countries in terms of The ratio of medals to the number of participants among all countries with at least 30 participants. For each country, draw the ratio of the number of gold, silver and bronze medals in separate columns.
 ## Question 5
-generate all the possible queries with dice, slice and drilldown operations and sport, agegroup, continent and gender values. Report the following queries:
-- 
+Generate all the possible queries with dice, slice and drilldown operations and sport, agegroup, continent and gender values. Report the following queries:
+- Lead to the classification of the values ​​that have the highest relative standard deviation for the number of medals obtained. In answering this section, consider the followings:
+1. Consider only queries that output a sub-cube with at least 100 records and 20 medals
+2. The relative standard deviation is calculated as CV = σ /µ.
+- Have the highest ratio of total medals to the total number of records. Consider the following limitation in responding to this section:
+1. The query result must be a sub-cube that covers at least 10 records.
+- The query that results in the most developing sub-cube. The most developing sub-cube is defined as follows:
+1. Percentage or more of medals are silver and bronze.
+2. Have the most number of medals.
+- The query that results in the most developed sub-cube. The most developed sub-cube is defined as follows:
+1. More than 50% of medals are gold.
+2. Have the most number of medals.
