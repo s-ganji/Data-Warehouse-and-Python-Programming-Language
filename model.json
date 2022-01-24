@@ -1,0 +1,60 @@
+{
+    "dimensions": [
+        {
+         "name":"location",
+         "levels": [
+                {
+                    "name":"continent",
+                    "label":"continent",
+                    "attributes": ["continent"]
+                },
+                {
+                    "name":"country",
+                    "label":"country",
+                    "attributes": ["country"]
+                }
+            ]
+        },
+        {"name":"gender"},
+      {"name": "agegroup"},
+      {"name": "sport"}
+    ],
+    "cubes": [
+        {
+            "name": "london12",
+            "dimensions": ["location", "gender", "agegroup", "sport"],
+            "measures": [
+                {"name":"gold", "label":"gold"},
+                 {"name": "silver","label": "silver"},
+                 {"name": "bronze","label": "bronze"}
+            ],
+            "aggregates": [
+                    {
+                        "name": "gold_sum",
+                        "function": "sum",
+                        "measure": "gold"
+                    },
+                    {
+                        "name": "silver_sum",
+                        "function": "sum",
+                        "measure": "silver"
+                    },
+                    {
+                        "name": "bronze_sum",
+                        "function": "sum",
+                        "measure": "bronze"
+                    },
+
+                    {
+                        "name": "record_count",
+                        "function": "count"
+                    }
+
+                ],
+            "mappings": {
+                          "location.continent": "continent",
+                          "location.country": "country"
+                         }
+        }
+    ]
+}
