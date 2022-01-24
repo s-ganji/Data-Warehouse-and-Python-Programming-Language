@@ -10,4 +10,6 @@ Draw the following diagrams:
 - Bar chart of the top 10 countries in terms of number of participants
 - Circular diagram of medal distribution on different continents
 - Bar chart of the top 10 countries in terms of The ratio of medals to the number of participants among all countries with at least 30 participants. For each country, draw the ratio of the number of gold, silver and bronze medals in separate columns.
-
+## Question 5
+generate all the possible queries with dice, slice and drilldown operations and sport, agegroup, continent and gender values. Report the following queries:
+- 
